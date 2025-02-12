@@ -50,7 +50,6 @@ app.use((req, res, next) => {
     };
     data.push(myData);
     fs.writeFileSync("data.json", JSON.stringify(data));
-    console.log(typeof data)
     next();
 })
 
